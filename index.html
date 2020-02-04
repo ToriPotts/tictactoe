@@ -8,15 +8,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/main.css">
-
+    <title>Tic-Tac-Toe</title>
     <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+    <h1>Tic-Tac-Toe</h1>
+    <span class="gameText" id="gameText"></span>
+    <div class="playerNameGrab">
+        <form id="namesAndButtons" onsubmit="return false;">
+            Player 1 Name:
+            <br>
+            <input id="player1" type="text" name="player1" value="" required>
+            <br> Player 2 Name:
+            <br>
+            <input id="player2" type="text" name="player2" value="" required>
+            <br>
+            <input id="submit" type="submit" value="Submit">
+            <input class="reset" id="reset" type="reset" value="Reset"></form>
+    </div>
 
-    <p>Hello world! This is HTML5 Boilerplate.</p>
+
+
+    <div id="container" class="body">
+        <div id="main" class="container">
+            <div class="row" id="row0">
+                <button class="box" id="box0"></button>
+                <button class="box" id="box1"></button>
+                <button class="box" id="box2"></button>
+            </div>
+            <div class="row" id="row1">
+                <button class="box" id="box3"></button>
+                <button class="box" id="box4"></button>
+                <button class="box" id="box5"></button>
+            </div>
+            <div class="row" id="row2">
+                <button class="box" id="box6"></button>
+                <button class="box" id="box7"></button>
+                <button class="box" id="box8"></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
     <script src="js/gameController.js"></script>
     <script src="js/gameBoard.js"></script>
+
     <script src="js/player.js"></script>
 
 

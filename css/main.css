@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 450px;
+}
+
+.box {
+    background-color: grey;
+    display: flex;
+    flex: 1;
+    border: thin solid black;
+    font-size: 100px;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.playerNameGrab {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.gameText {
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
