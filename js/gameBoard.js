@@ -2,10 +2,9 @@ const containerDiv = document.querySelector("#container");
 let xOrO = "";
 
 
-
 const gameBoard = {
-    grid: ["O", "", "",
-        "", "X", "",
+    grid: ["", "", "",
+        "", "", "",
         "", "", ""
     ],
     renderGrid: function() {
@@ -17,6 +16,7 @@ const gameBoard = {
     setClickListeners: function() {
         for (let i = 0; i < 9; i++) {
             const currentClickedBox = document.querySelector(`#box${i}`);
+
 
 
             currentClickedBox.addEventListener('click', () => {
@@ -31,13 +31,10 @@ const gameBoard = {
                         xOrO = "X";
                         break;
                 }
-                if (this.grid[i] === "X" || this.grid[i] === "O") { return }
-                //add player 1/2 logic
-                else { this.grid[i] = xOrO }
+                if (this.grid[i] === "X" || this.grid[i] === "O") { return } else { this.grid[i] = xOrO }
 
                 this.renderGrid()
                 checkForWinner();
-                console.log(this.grid)
             })
         }
     },
